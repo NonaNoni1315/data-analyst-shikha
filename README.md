@@ -11,7 +11,7 @@ This document explains the UCW Dataset used to analyze students' CGPA performanc
 ### Dataset Overview
 The dataset, titled *UCW RegistrarOffice-9023p Academic Standing Procedure*, contains details on students’ academic performance. It includes CGPA trends and academic standings to support in-depth analysis and achieve the goal of improving student outcomes. Weekly activities and class participation were conducted to perform the AWS services described below.
 
----
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/bdf979de-badb-4b86-b2b7-5d8fc72fb12a" />
 
 ### *Descriptive Analytics*
 
@@ -37,6 +37,8 @@ To identify terms where students are most at academic risk and propose strategie
 
 #### Data Collection and Preparation
 - Raw academic datasets were ingested into *AWS S3* under the directory ro-raw-shikha.
+  <img width="468" alt="image" src="https://github.com/user-attachments/assets/2dbcbcb8-c45d-4a43-86e6-464b358a9e3f" />
+
 - *AWS DataBrew* was used for data profiling and cleansing, removing NULL values, duplicates, and ensuring consistency. Cleaned data was moved to ro-prf-shikha.
 - Final processed data was stored in the ro-cur-shikha directory.
 
