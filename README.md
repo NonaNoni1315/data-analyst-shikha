@@ -141,12 +141,20 @@ To analyze the Vancouver’s Greenest City project dataset to evaluate the progr
 #### Data Wrangling
 - AWS Glue Crawlers extracted schemas and allowed unlimited querying of data and stored in ro-cur-shikha directory under S3 bucket.
   
-<img width="468" alt="image" src="https://github.com/user-attachments/assets/0b631570-d415-4b4f-8656-5158ef191b18" />
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/b22c5e7e-152a-4f57-bb5b-16c59641ca61" />
+
 
 #### Data Analysis
 - *AWS Athena* service for using the SQL queries to to calculate how many goals are below the baselines. With the query result got to know that the ‘Clean-Air’ goal is the only goal which is not achievable out of all goals.
 
   <img width="470" alt="image" src="https://github.com/user-attachments/assets/2f5ab449-298c-4617-b8de-14af3ac7d691" />
+
+  <img width="468" alt="image" src="https://github.com/user-attachments/assets/a4f489fe-06e1-4321-a91a-179ffb5a4d85" />
+  
+- After running the crawler, the result can be seen in the Databases – Tables.
+
+  <img width="468" alt="image" src="https://github.com/user-attachments/assets/10f90d2f-6db8-41e6-9f7d-221062841148" />
+
 
 #### Insights and Findings
 - The *Clean-Air* is the goal which is not achievable out of all goals in Sustainability Action Plan Goal 2020. This can be due to increase of vehicle and related pollution.
