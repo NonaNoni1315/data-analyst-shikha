@@ -3,26 +3,24 @@
 
 ---
 
-## Project 1: AWS-Data-Analyst-UCW Registrar Office (Academic Standing Procedure)
-- *Category:* (UCW Dataset, Class Activity, Weekly Activity)
+## Project 1: AWS-Data-Analyst-UCW Registrar Office (Academic Standing Procedure) 
+###### This Project includes UCW Dataset, Class Activity, Weekly Activity
 
-This document explains the UCW Dataset used to analyze students' CGPA performance metrics, identify term risk, and recommend strategies to enhance academic performance. The analysis employs AWS services, such as S3 Bucket for data ingestion, DataBrew for cleaning and profiling, Glue for ETL pipeline development, and other AWS Cloud platform tools.
 
-### Dataset Overview
-The dataset, titled *UCW RegistrarOffice-9023p Academic Standing Procedure*, contains details on students’ academic performance. It includes CGPA trends and academic standings to support in-depth analysis and achieve the goal of improving student outcomes. Weekly activities and class participation were conducted to perform the AWS services described below.
+This document explains the UCW Dataset used to analyze students' CGPA performance metrics, identify term risk, and recommend strategies to enhance academic performance. The analysis employs AWS services, such as S3 Bucket for data ingestion, DataBrew for cleaning and profiling, Glue for ETL pipeline development, and other AWS Cloud platform tools.This is using the dataset of UCW RewgistrarOffice-9023pAcademic Standing Procedure. It contains the students’ academic performance details. It includes information about the student’s Performance with CGPA trend and academic standings. This dataset is useful for the depth analysis to achieve the goal of student improvement outcomes. Weekly activities and class participation have been conducted on weekly basis to perform the AWS services described below.
 
-<img width="468" alt="image" src="https://github.com/user-attachments/assets/bdf979de-badb-4b86-b2b7-5d8fc72fb12a" />
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/9be62de2-5ea9-48e6-b1ed-b8e15c6a8d6d" />
 
 ### *Descriptive Analytics*
 
 #### *1. Project Description*
-Analyze student academic performance per term to identify performance trends and propose strategies for improving CGPA.
+Analyze student academic performance per term to identify performance trends and propose strategies for improving students CGPA.
 
 #### *2. Project Title*
 UCW Students Academic Performance Analysis and Recommendations
 
 #### *3. Objective*
-To identify terms where students are most at academic risk and propose strategies to support and improve student outcomes.
+To This project goal is to identify the terms where UCW students are most at academic risks of underperformance. With the help of this UCW can highlight the CGPA trends and associate support or improvements which students require.
 
 #### *4. Dataset Attributes*
 - *Student ID:* Unique ID for each student.
@@ -34,7 +32,7 @@ To identify terms where students are most at academic risk and propose strategie
 ### *5. Methodology*
 
 #### Data Collection and Preparation
-- Raw academic datasets were ingested into *AWS S3* under the directory ro-raw-shikha.
+- Raw academic datasets were ingested into *AWS S3* under the raw directory ro-raw-shikha in structured format.
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/2dbcbcb8-c45d-4a43-86e6-464b358a9e3f" />
 
 - *AWS DataBrew* was used for data profiling and cleansing, removing NULL values, duplicates, and ensuring consistency. Cleaned data was moved to ro-prf-shikha.
@@ -47,7 +45,7 @@ To identify terms where students are most at academic risk and propose strategie
 - *AWS Glue* ensured schema consistency.
 
 #### ETL Pipeline Development
-- AWS Glue performed ETL operations, transforming the UCW dataset to analyze patterns and identify students with low CGPA.
+- AWS Glue performed ETL operations, transforming the UCW dataset to analyze patterns and identify students with low CGPA and need academic support.
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/c9437720-447b-4018-ab8e-b773e085cd5e" />
 
   
@@ -66,17 +64,17 @@ To identify terms where students are most at academic risk and propose strategie
 - The *Spring term* displayed the lowest average CGPA, highlighting academic challenges during this period.
 
 #### Data Encryption
-- Data security was ensured using *AWS KMS* with the encryption key reg-scdStnd-key-shikha. This protected the data during transfer and at rest.
+- Data security was ensured using *AWS KMS* with the encryption key reg-scdStnd-key-shikha. This protected the data during transfer and at rest from unauthorized access.
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/8548707a-1b5c-4861-a10c-33d15805ca13" />
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/6650fa37-a79b-405a-80e3-1ee068aacad7" />
 
 
 
 #### Monitoring and Controlling Operations
-- *AWS CloudWatch* monitored ETL jobs, S3 bucket usage, and error logs. Metrics were visualized in CloudWatch dashboards.
+- *AWS CloudWatch* is used to monitor ETL jobs, S3 bucket usage, and error logs. These all metrics can be visualized in the created dashboard using AWS Cloud Watch. Cloud Watch (Monitor, Compare, Control, Metric, Logs for resource).
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/9cfb2953-50a7-467e-bf1e-4089acbf241e" />
 
-- *CloudTrail* was used to track activities, with logs integrated into CloudWatch.
+- *CloudTrail* was used to track activities, with logs integrated into CloudWatch.Created the cloud trail with the name ‘reg-scdmStnd-dap-users-shikha’.
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/16a1b8e6-f0c4-4a9c-a5e4-c31eb51eb89f" />
 
 
@@ -87,8 +85,6 @@ To identify terms where students are most at academic risk and propose strategie
 - *Athena:* Querying and analyzing data.
 - *KMS:* Data encryption.
 - *CloudWatch:* Monitoring and control.
-
----
 
 ### *Project Image*
 [![AWS Data Analyst UCW Project](https://example.com/images/ucw-academic-standing.jpg)](https://example.com/ucw-project-details)
