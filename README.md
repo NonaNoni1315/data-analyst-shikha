@@ -34,7 +34,7 @@ This project goal is to identify the terms where UCW students are most at academ
   
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/2dbcbcb8-c45d-4a43-86e6-464b358a9e3f" />
 
-- *AWS DataBrew* was used for data profiling and data cleansing both to remove the NULL values, duplicate values, column renames, creating categorical column and maintain the data consistency. And then moved the cleaned data into back AWS S3 bucket under the transform directory ‘ro-prf-shikha’. The csv output stored underuser folder and parquet has stored under system folder.
+- *AWS DataBrew* was used for data profiling and data cleansing both to remove the NULL values, duplicate values, column renames, creating categorical column and maintain the data consistency. And then moved the cleaned data into back AWS S3 bucket under the transform directory ‘ro-prf-shikha’. The csv output stored under user folder and parquet has stored under system folder.
 
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/1e3651df-8344-448e-ad8d-164b4557a7b0" />
 
