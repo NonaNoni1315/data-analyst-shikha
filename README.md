@@ -45,7 +45,7 @@ This project goal is to identify the terms where UCW students are most at academ
 - *AWS Glue* ensured schema consistency.
 
 #### ETL Pipeline Development
-- AWS Glue services used for performing the ETL (Extract, Transform, Loading) operation. It extracts the UCW dataset from transformation folder and the do the transformation to obtain the result for identify students having low CGPA as per the term registered and analyze patterns across terms and CGPA for targeted academic support.
+- AWS Glue services used for performing the ETL (Extract, Transform, Loading) operation. It extracts the UCW dataset from transformation folder and do the transformation to obtain the result for identify students having low CGPA as per the term registered and analyze patterns across terms and CGPA for targeted academic support.
   
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/c9437720-447b-4018-ab8e-b773e085cd5e" />
 
