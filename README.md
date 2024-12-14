@@ -1,13 +1,9 @@
 # data-analyst-shikha
-# Project Portfolio
-
----
-
 ## Project 1: AWS-Data-Analyst-UCW Registrar Office (Academic Standing Procedure) 
 ###### This Project includes UCW Dataset, Class Activity, Weekly Activity
 
 
-This document explains the UCW Dataset used to analyze students' CGPA performance metrics, identify term risk, and recommend strategies to enhance academic performance. The analysis employs AWS services, such as S3 Bucket for data ingestion, DataBrew for cleaning and profiling, Glue for ETL pipeline development, and other AWS Cloud platform tools.This is using the dataset of UCW RewgistrarOffice-9023pAcademic Standing Procedure. It contains the students’ academic performance details. It includes information about the student’s Performance with CGPA trend and academic standings. This dataset is useful for the depth analysis to achieve the goal of student improvement outcomes. Weekly activities and class participation have been conducted on weekly basis to perform the AWS services described below.
+This document explains the UCW Dataset used to analyze student's CGPA performance metrics, identify term risk, and recommend strategies to enhance academic performance. The analysis employs AWS services, such as S3 Bucket for data ingestion, DataBrew for cleaning and profiling, Glue for ETL pipeline development, and other AWS Cloud platform tools.This is using the dataset of UCW RewgistrarOffice-9023pAcademic Standing Procedure. It contains the students’ academic performance details. It includes information about the student’s Performance with CGPA trend and academic standings. This dataset is useful for the depth analysis to achieve the goal of student improvement outcomes. Weekly activities and class participation have been conducted on weekly basis to perform the AWS services described below.
 
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/9be62de2-5ea9-48e6-b1ed-b8e15c6a8d6d" />
 
@@ -36,6 +32,7 @@ To This project goal is to identify the terms where UCW students are most at aca
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/2dbcbcb8-c45d-4a43-86e6-464b358a9e3f" />
 
 - *AWS DataBrew* was used for data profiling and cleansing, removing NULL values, duplicates, and ensuring consistency. Cleaned data was moved to ro-prf-shikha.
+  
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/1e3651df-8344-448e-ad8d-164b4557a7b0" />
 
 - Final processed data was stored in the ro-cur-shikha directory.
@@ -46,6 +43,7 @@ To This project goal is to identify the terms where UCW students are most at aca
 
 #### ETL Pipeline Development
 - AWS Glue performed ETL operations, transforming the UCW dataset to analyze patterns and identify students with low CGPA and need academic support.
+  
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/c9437720-447b-4018-ab8e-b773e085cd5e" />
 
   
@@ -65,7 +63,9 @@ To This project goal is to identify the terms where UCW students are most at aca
 
 #### Data Encryption
 - Data security was ensured using *AWS KMS* with the encryption key reg-scdStnd-key-shikha. This protected the data during transfer and at rest from unauthorized access.
+  
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/8548707a-1b5c-4861-a10c-33d15805ca13" />
+  
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/6650fa37-a79b-405a-80e3-1ee068aacad7" />
 
 
@@ -74,7 +74,8 @@ To This project goal is to identify the terms where UCW students are most at aca
 - *AWS CloudWatch* is used to monitor ETL jobs, S3 bucket usage, and error logs. These all metrics can be visualized in the created dashboard using AWS Cloud Watch. Cloud Watch (Monitor, Compare, Control, Metric, Logs for resource).
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/9cfb2953-50a7-467e-bf1e-4089acbf241e" />
 
-- *CloudTrail* was used to track activities, with logs integrated into CloudWatch.Created the cloud trail with the name ‘reg-scdmStnd-dap-users-shikha’.
+- *CloudTrail* was used to track activities, with logs integrated into CloudWatch.Created the cloud trail with the name ‘reg-scdmStnd-dap-users-shikha'.
+  
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/16a1b8e6-f0c4-4a9c-a5e4-c31eb51eb89f" />
 
 
@@ -86,13 +87,9 @@ To This project goal is to identify the terms where UCW students are most at aca
 - *KMS:* Data encryption.
 - *CloudWatch:* Monitoring and control.
 
-### *Project Image*
-[![AWS Data Analyst UCW Project](https://example.com/images/ucw-academic-standing.jpg)](https://example.com/ucw-project-details)
-
----
 
 ## Project 2: AWS-Data-Analyst-Vancouver City Greenest City Projects
-- *Category:* (City of Vancouver - Open Data Portal - Greenest City Project)
+###### This Project includes City of Vancouver - Open Data Portal - Greenest City Project
 
 This project analyzes Vancouver’s Greenest City Projects dataset to evaluate sustainability initiatives and their distributed goals. It identifies gaps and opportunities for improving the achievement of sustainability goals like Clean Air, Local Food, and Green Economy. AWS services were employed for efficient data storage, management, processing, and analysis.
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/6a704580-7a80-433d-bb83-36159996607f" />
