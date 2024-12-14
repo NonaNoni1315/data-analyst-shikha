@@ -5,7 +5,7 @@
 ---
 
 This document has explained the UCW Dataset which analyze the students CGPA performance metrics, identify the term risk and recommend the strategies to students for enhancing their academic performance. This Analysis has used the different AWS services like AWS S3 Bucket for data ingestion, Data Brew for cleaning and profiling, Glue for ETL pipeline development, AWS Cloud platform tools.
-This is using the dataset of UCW RewgistrarOffice-9023p Academic Standing Procedure. It contains the students’ academic performance details. It includes information about the student’s Performance with CGPA trend and academic standings. This dataset is useful for the depth analysis to achieve the goal of student improvement outcomes. Weekly activities and class participation have been conducted on weekly basis to perform the AWS services described below.
+This is using the dataset of UCW RegistrarOffice-9023p Academic Standing Procedure. It contains the students’ academic performance details. It includes information about the student’s Performance with CGPA trend and academic standings. This dataset is useful for the depth analysis to achieve the goal of student improvement outcomes. Weekly activities and class participation have been conducted on weekly basis to perform the AWS services described below.
 
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/9be62de2-5ea9-48e6-b1ed-b8e15c6a8d6d" />
 
