@@ -169,7 +169,7 @@ To analyze the Vancouver’s Greenest City project dataset to evaluate the progr
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/3221d159-a6ae-4226-91a0-8154a2b6c341" />
 
   #### Data Governance
-- *Data Governance* ensured the data follows all the compliance like quality, completeness, uniqueness, privacy, protection and control. Next, used the AWS Glue service for creating ETL. This governance pipeline ensures the privacy, uniqueness and completeness of the dataset.
+- *Data Governance* ensured the data follows all the compliance like quality, completeness, uniqueness, privacy, protection and control. Next, used the AWS Glue service for created ETL. This governance pipeline ensures the privacy, uniqueness and completeness of the dataset.
 
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/b5941060-7a2b-4637-8b54-67894d809c81" />
 
