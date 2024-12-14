@@ -160,7 +160,7 @@ To analyze the Vancouver’s Greenest City project dataset to evaluate the progr
 #### Data Analysis
 -Used AWS Athena service for using the SQL queries to to calculate how many goals are below the baselines. With the query result, I got to know that the ‘Clean-Air’ goal is the only goal which is not achievable out of all goals.
 
-
+<img width="470" alt="image" src="https://github.com/user-attachments/assets/dfb3be92-5c7c-46ac-97a6-65c8051cb618" />
 
 #### Insights and Findings
 - The *Clean-Air* is the goal which is not achievable out of all goals in Sustainability Action Plan Goal 2020. This can be due to increase of vehicle and related pollution.
