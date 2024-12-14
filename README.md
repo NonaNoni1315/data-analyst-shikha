@@ -124,7 +124,7 @@ To analyze the Vancouver’s Greenest City project dataset to evaluate the progr
   
   <img width="431" alt="image" src="https://github.com/user-attachments/assets/24a7f0cb-a31f-4538-aee3-84077c292f2e" />
 
-- *AWS DataBrew* performed the data profiling and data cleansing both to remove the NULL values, duplicate values, column renames, creating categorical column and maintain the data consistency. Then moved the cleaned data into back AWS S3 bucket under the transform directory ‘shikha-greencity-trf’. The csv output stored under user folder and parquet has stored under system folder. finally, processed data into current directory ‘ro-cur-shikha’.
+- *AWS DataBrew* performed the data profiling and data cleansing both to remove the NULL values, duplicate values, column renames, created categorical column and maintain the data consistency. Then moved the cleaned data into back AWS S3 bucket under the transform directory ‘shikha-greencity-trf’. The csv output stored under user folder and parquet has stored under system folder. finally, processed data into current directory ‘ro-cur-shikha’.
   
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/e26632c4-206f-406f-945f-a8b2f50272b1" />
 
