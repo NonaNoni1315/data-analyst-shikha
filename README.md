@@ -157,13 +157,13 @@ To analyze the Vancouver’s Greenest City project dataset to evaluate the progr
 #### Data Analysis
 - *AWS Athena* queries identified goals below baseline levels, such as the *Clean-Air* goal, which was underachieved.
   
-  <img width="470" alt="image" src="https://github.com/user-attachments/assets/f6020bd1-b12e-4960-b42b-c028e771b5f2" />
+  <img width="470" alt="image" src="https://github.com/user-attachments/assets/2f5ab449-298c-4617-b8de-14af3ac7d691" />
+
 
 
 #### Insights and Findings
-- The *Clean-Air* goal remains unachievable due to increased pollution. It has been transferred to the next year for further initiatives.
-
-  <img width="470" alt="image" src="https://github.com/user-attachments/assets/a0644cc4-fbfe-45a2-b8e6-c35c6b74fa77" />
+- The *Clean-Air* goal is the goal which is not achievable out of all goas in Sustainability Action Plan Goal 2020. This can be due to increase of vehicle and related pollution.
+- The goal is transferred to next year goal with ore initiatives to achieve.
 
 
 #### Data Protection
