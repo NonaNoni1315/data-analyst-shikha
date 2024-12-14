@@ -150,9 +150,18 @@ To analyze the Vancouver’s Greenest City project dataset to evaluate the progr
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/10f90d2f-6db8-41e6-9f7d-221062841148" />
 
 #### Data Analysis
+-To create the data catalog using AWS Glue service. I have created a database is ‘database-shikha’.
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/a38b6887-a3bb-4627-bf5c-a392514e2b3e" />
+
+-Created  all crawler
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/f415c6ce-3933-44e4-a369-be116ac4fb37" />
+
+-Verified the tables created successfully into Database “database-shikha”.
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/382490e8-0afc-47d8-99c8-0498fd7af858" />
+
 - *AWS Athena* service for using the SQL queries to to calculate how many goals are below the baselines. With the query result got to know that the ‘Clean-Air’ goal is the only goal which is not achievable out of all goals.
 
-  <img width="470" alt="image" src="https://github.com/user-attachments/assets/2f5ab449-298c-4617-b8de-14af3ac7d691" />
+  <img width="468" alt="image" src="https://github.com/user-attachments/assets/e738df7f-2cac-48ab-bf23-8605aa213ad0" />
 
 #### Insights and Findings
 - The *Clean-Air* is the goal which is not achievable out of all goals in Sustainability Action Plan Goal 2020. This can be due to increase of vehicle and related pollution.
