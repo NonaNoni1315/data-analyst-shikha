@@ -1,6 +1,8 @@
 # data-analyst-shikha
+---
 ## Project 1: AWS-Data-Analyst-UCW Registrar Office (Academic Standing Procedure) 
 ###### This Project includes UCW Dataset, Class Activity, Weekly Activity
+---
 
 
 This document explains the UCW Dataset used to analyze student's CGPA performance metrics, identify term risk, and recommend strategies to enhance academic performance. The analysis employs AWS services, such as S3 Bucket for data ingestion, DataBrew for cleaning and profiling, Glue for ETL pipeline development, and other AWS Cloud platform tools.This is using the dataset of UCW RewgistrarOffice-9023pAcademic Standing Procedure. It contains the students’ academic performance details. It includes information about the student’s Performance with CGPA trend and academic standings. This dataset is useful for the depth analysis to achieve the goal of student improvement outcomes. Weekly activities and class participation have been conducted on weekly basis to perform the AWS services described below.
@@ -29,6 +31,7 @@ To This project goal is to identify the terms where UCW students are most at aca
 
 #### Data Collection and Preparation
 - Raw academic datasets were ingested into *AWS S3* under the raw directory ro-raw-shikha in structured format.
+  
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/2dbcbcb8-c45d-4a43-86e6-464b358a9e3f" />
 
 - *AWS DataBrew* was used for data profiling and cleansing, removing NULL values, duplicates, and ensuring consistency. Cleaned data was moved to ro-prf-shikha.
@@ -50,11 +53,13 @@ To This project goal is to identify the terms where UCW students are most at aca
 
 #### Data Wrangling
 - AWS Glue Crawlers provided unlimited query access to the transformed data, stored in the directory ro-cur-shikha.
+  
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/b0f3719b-ffa8-4bd0-94d7-f9ab98e82bd9" />
 
 
 #### Data Analysis
 - *AWS Athena* executed SQL queries to extract term-wise CGPA trends and identify at-risk terms.
+  
   <img width="362" alt="image" src="https://github.com/user-attachments/assets/a4a428b4-045c-4c0e-93aa-22d788099b2c" />
 
 
@@ -72,6 +77,7 @@ To This project goal is to identify the terms where UCW students are most at aca
 
 #### Monitoring and Controlling Operations
 - *AWS CloudWatch* is used to monitor ETL jobs, S3 bucket usage, and error logs. These all metrics can be visualized in the created dashboard using AWS Cloud Watch. Cloud Watch (Monitor, Compare, Control, Metric, Logs for resource).
+  
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/9cfb2953-50a7-467e-bf1e-4089acbf241e" />
 
 - *CloudTrail* was used to track activities, with logs integrated into CloudWatch.Created the cloud trail with the name ‘reg-scdmStnd-dap-users-shikha'.
@@ -87,11 +93,13 @@ To This project goal is to identify the terms where UCW students are most at aca
 - *KMS:* Data encryption.
 - *CloudWatch:* Monitoring and control.
 
-
+---
 ## Project 2: AWS-Data-Analyst-Vancouver City Greenest City Projects
 ###### This Project includes City of Vancouver - Open Data Portal - Greenest City Project
+---
 
-This project analyzes Vancouver’s Greenest City Projects dataset to evaluate sustainability initiatives and their distributed goals. It identifies gaps and opportunities for improving the achievement of sustainability goals like Clean Air, Local Food, and Green Economy. AWS services were employed for efficient data storage, management, processing, and analysis.
+This project analyzes Vancouver’s Greenest City Projects dataset to evaluate sustainability initiatives and their distributed goals. It identifies gaps and opportunities for improving the achievement of sustainability goals like Clean Air, Local Food, and Green Economy. AWS services were employed for efficient data storage, management, processing, and analysis. 
+
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/6a704580-7a80-433d-bb83-36159996607f" />
 
 
@@ -104,7 +112,8 @@ Analyze Vancouver’s Greenest City Projects dataset to evaluate the distributio
 Analysis for Sustainability Initiatives by Vancouver’s Greenest City Projects
 
 #### *3. Objective*
-To evaluate progress and underperformance in sustainability goals and provide recommendations for target achievement.
+To analyze the Vancouver’s Greenest City project dataset to evaluate the progress, underperforming category like clean air, local food and underperforming sectors like public or city of sustainability initiatives and provide the recommendations for target achievement.
+
 
 #### *4. Dataset Attributes*
 - *MAPID:* Unique ID for each project.
@@ -116,53 +125,81 @@ To evaluate progress and underperformance in sustainability goals and provide re
 - *URLs:* Links for more information.
 - *Geo Local Area:* Local area of the project.
 
----
 
 ### *5. Methodology*
 
 #### Data Collection and Preparation
-- Raw datasets were ingested into *AWS S3* under the directory shikha-greencity-raw.
+- Raw datasets were ingested into *AWS S3* under the raw directory shikha-greencity-raw.
+  
   <img width="431" alt="image" src="https://github.com/user-attachments/assets/24a7f0cb-a31f-4538-aee3-84077c292f2e" />
 
-- *AWS DataBrew* performed data cleansing and consistency checks. Cleaned data was stored in shikha-greencity-trf.
+- *AWS DataBrew* performed the data profiling and data cleansing both to remove the NULL values, duplicate values, column renames, creating categorical column and maintain the data consistency. And then moved the cleaned data into back AWS S3 bucket under the transform directory ‘shikha-greencity-trf’. The csv output stored under user folder and parquet has stored under system folder. Then, final processed data into current directory ‘ro-cur-shikha’.
+  
   <img width="468" alt="image" src="https://github.com/user-attachments/assets/e26632c4-206f-406f-945f-a8b2f50272b1" />
 
 
 #### Data Enrichment
-- Additional datasets, such as Greenest City Action Plan metrics, were added for deeper analysis. These metrics were cleansed using DataBrew and stored in the transform directory.
+- Additional dataset such as ‘Greenest City Action Plan (GCAP) Metrics’ has been used for more data enrichment for further analysis. This metric provides me the more depth information related the Vancouver’s environmental and sustainability goal progress w.r.t sustainability goals (climate, green buildings, transportation, waste, and water). It helps to highlight the baseline level, target achievement percentage, challenges and future action plan w.r.t each sustainability goal. These data set has been stored under raw directory ‘shikha-greencity-raw’ of AWS S3 bucket then perform the profiling and cleansing using DataBrew service and stored into the transform directory ‘shikha-greencity-trf’ under S3 bucket. Next, AWS Glue service used for making different sources schema consistent. 
+
 
 #### ETL Pipeline Development
-- *AWS Glue* handled ETL processes, transforming data to identify project distribution across categories and goals.
+- *AWS Glue* handled ETL (Extract, Transform, Load) processes, transforming data to identify project distribution across categories and goals.
  <img width="468" alt="image" src="https://github.com/user-attachments/assets/783d30bc-18d9-4494-a02f-ee3a016d4b56" />
  <img width="468" alt="image" src="https://github.com/user-attachments/assets/f43dca0d-be4b-46f5-a23d-1200a37c37a8" />
 
 
 
 #### Data Wrangling
-- AWS Glue Crawlers extracted schemas and allowed unlimited querying of data, stored in ro-cur-shikha.
+- AWS Glue Crawlers extracted schemas and allowed unlimited querying of data and stored in ro-cur-shikha directory under S3 bucket.
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/0b631570-d415-4b4f-8656-5158ef191b18" />
 
 
 #### Data Analysis
 - *AWS Athena* queries identified goals below baseline levels, such as the *Clean-Air* goal, which was underachieved.
+  
   <img width="470" alt="image" src="https://github.com/user-attachments/assets/f6020bd1-b12e-4960-b42b-c028e771b5f2" />
 
 
 #### Insights and Findings
 - The *Clean-Air* goal remains unachievable due to increased pollution. It has been transferred to the next year for further initiatives.
 
-#### Data Protection
-- *AWS KMS* encryption key Protection_key_shikha was created for secure data management. A replication rule greencity-rule-shikha was added to enhance protection.
-  <img width="468" alt="image" src="https://github.com/user-attachments/assets/4e78ce75-6e91-4b3a-8424-980214068cb1" />
-  <img width="468" alt="image" src="https://github.com/user-attachments/assets/b8c4cb82-cfca-4387-b688-44e9102356fc" />
+  <img width="470" alt="image" src="https://github.com/user-attachments/assets/a0644cc4-fbfe-45a2-b8e6-c35c6b74fa77" />
 
+
+#### Data Protection
+- *AWS KMS* encryption key Protection_key_shikha was created for secure data management. Data security plays an important role for keeping data secure using AWS KMS (Key management System) service which helps to protect the S3 bucket from unauthorized access. It helps to stay data securely encrypted both during transfer and at rest.
+
+  <img width="468" alt="image" src="https://github.com/user-attachments/assets/f49a7f74-9425-4ecb-b099-754c59079bd2" />
+
+  <img width="468" alt="image" src="https://github.com/user-attachments/assets/e3b661c4-6d69-4720-bc5a-71c218c8c7f4" />
+- Next, created the replication rule with the name ‘greencity-rule-shikha’ under ‘Management’ tab on the original bucket 'ro-raw-shikha'.
+
+  <img width="468" alt="image" src="https://github.com/user-attachments/assets/3221d159-a6ae-4226-91a0-8154a2b6c341" />
+
+
+  #### Data Governance
+- *Data Governance* ensured the data follows all the compliance like quality, completeness, uniqueness, privacy, protection and control. Next, I have used the AWS Glue service for creating ETL. This governance pipeline ensures the privacy, uniqueness and completeness of the dataset.
+
+  <img width="468" alt="image" src="https://github.com/user-attachments/assets/b5941060-7a2b-4637-8b54-67894d809c81" />
+
+  - This ETL stored the Passed and Failed result on the defined folder path” s3://greencity-shikha-rawtrfcurr/greencity-trf-shikha/data-quality-shikha.
+
+    <img width="468" alt="image" src="https://github.com/user-attachments/assets/865af7fa-0bb0-489a-ac88-e4fbe258405e" />
 
 
 #### Monitoring and Controlling Operations
-- *AWS CloudWatch* monitored S3 bucket usage, ETL jobs, and error logs. A dashboard visualized metrics for smooth operations.
-- *CloudTrail* tracked user activities and generated logs for event history.
+- *AWS CloudWatch* used to monitor ETL jobs, S3 bucket usage, and error logs. These all metrics can be visualized in the created dashboard using AWS Cloud Watch. Created service name “CloudWatch service” to Monitor, Compare, Control, Metric, Logs for resources.
 
----
+  <img width="468" alt="image" src="https://github.com/user-attachments/assets/bb6d954a-b9c4-4256-9955-e29d4fd166f4" />
+
+- *CloudTrail* tracked user activities and generated logs for event history. Created the cloud trail with the name ‘greencity-UserTrail-shikha’.
+  
+  <img width="468" alt="image" src="https://github.com/user-attachments/assets/392513ff-1b59-46e5-b631-fc98ca979eb6" />
+
+- Lastly, I have used the event history of the user under Event History of Cloud Trail to monitor the events executed by the users.
+
+  <img width="468" alt="image" src="https://github.com/user-attachments/assets/e514847d-c71c-4166-a194-b69740aa0e60" />
+
 
 ### *6. Tools and Technology*
 - *S3:* Data storage and management.
